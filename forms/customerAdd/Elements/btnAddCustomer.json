@@ -29,7 +29,7 @@
   "icon": "",
   "iconTitle": "",
   "id": "btnAddCustomer",
-  "left": 144,
+  "left": 38,
   "mAll": "",
   "mBottom": "",
   "mLeft": "",
@@ -60,7 +60,7 @@
   "size": " btn-md",
   "style": "",
   "toggleControl": "",
-  "top": 154,
-  "value": "Add Customer",
-  "width": 155
+  "top": 166,
+  "value": "Add Jesse Antiques ",
+  "width": 245
 }
