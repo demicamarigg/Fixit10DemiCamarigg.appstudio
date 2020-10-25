@@ -16,6 +16,7 @@ customerUpdate.onshow=function(){
     }  
 
 }
+
 btnUpdate.onclick=function(){
     let newName = inptNewName.value
     let oldName = selUpdate.value
@@ -30,19 +31,19 @@ btnUpdate.onclick=function(){
      }   
 
     if (found == false) 
-       NSB.MsgBox("That pet name is not in the database.")
+       NSB.MsgBox("That customer name is not in the database.")
     else if (found == true) {
         query = "UPDATE customer SET name =" + '"' + newName + '"' + " WHERE name = " + '"' + oldName + '"'
         //alert(query)
        req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=djc83259&pass=" + pw + "&database=djc83259&query=" + query)
         if (req.status == 200) { //transit worked.
             if (req.responseText == 500) {   // means the update succeeded
-                NSB.MsgBox(`You have successfully changed the pet name!`)
+                NSB.MsgBox(`You have successfully changed the customer name!`)
                 // reset controls to original state
                 inptNewName.value = ""
                 selUpdate.value = ""
             } else
-                NSB.MsgBox(`There was a problem changing the pet name.`)
+                NSB.MsgBox(`There was a problem changing the customer name.`)
         } else 
             // transit error
             NSB.MsgBox(`Error: ${req.status}`);
@@ -64,7 +65,7 @@ if (req.status == 200){
         console.log(`the parsed JSON is ${postDel}`)
         console.log(`the first row/item in the big array is a small array: ${postDel[0]}`)
 
-        // Now output the names of all the dogs into the textArea control:
+        // Now output the names of all the customers into the textArea control:
         let message1 = ""
         for (i = 0; i < postDel.length; i++)
             message1 = message1 + postDel[i][1] + "\n"
