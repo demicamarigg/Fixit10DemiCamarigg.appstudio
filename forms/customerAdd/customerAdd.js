@@ -1,5 +1,5 @@
+
 // display customer names
-let allCustomerNames = ""
 customerAdd.onshow=function(){
 
 // populate drop down with customer names     
@@ -8,16 +8,14 @@ customerAdd.onshow=function(){
             req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=djc83259&pass=[password]&database=djc83259&query" + query)
     if (req.status == 200) { //transit worked.
             allCustomerNames = JSON.parse(req.responseText)
-            
-            // names now in results array - load names into the dropdown
-            selAddCustomer.clear()
-            for (i = 0; i <= allCustomers.length - 1; i++)
-                selAddCustomer.addItem(allCustomerNames[i])
+            selUpdate.clear()
+            for (i = 0; i <= allCustomerNames.length - 1; i++)
+                selUpdate.addItem(allCustomerNames[i])
     } else {
         // transit error
         NSB.MsgBox(`Error: ${req.status}`);
-  }
-}  
+    }  
+}
 
 // add customer button
 btnAddCustomer.onclick=function(){
