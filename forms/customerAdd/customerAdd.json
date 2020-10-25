@@ -16,7 +16,7 @@
         "forms",
         "customerAdd",
         "Elements",
-        "selAddCustomer.json"
+        "btnAdd.json"
       ]
     },
     {
@@ -25,16 +25,7 @@
         "forms",
         "customerAdd",
         "Elements",
-        "btnAddCustomer.json"
-      ]
-    },
-    {
-      "!type": "External",
-      "file": [
-        "forms",
-        "customerAdd",
-        "Elements",
-        "txtRemaining.json"
+        "txtPostAdd.json"
       ]
     },
     {
@@ -53,6 +44,33 @@
         "customerAdd",
         "Elements",
         "btnCheck3.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "btnAllCustomer1.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "txtAllCustomerName.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptAdd.json"
       ]
     }
   ],
