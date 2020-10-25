@@ -14,7 +14,6 @@ customerUpdate.onshow=function(){
         // transit error
         NSB.MsgBox(`Error: ${req.status}`);
     }  
-
 }
 
 btnUpdate.onclick=function(){
